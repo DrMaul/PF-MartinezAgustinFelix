@@ -99,7 +99,7 @@ main {
     .card {
         text-align: center;
         background-color: $color-dark;
-        border: 1px solid $color-white;
+        border: 1px solid $color-gris;
         transition: 0.5s;
         &:hover {
             border: 1px solid $color-cian;
@@ -136,31 +136,52 @@ main {
 
     .card-noti-inicio {
 
-        
-        vertical-align: text-bottom;
         border: 1px solid $color-gris;
         text-shadow: 2px 2px 2px $color-dark;
-        vertical-align: text-bottom !important;
-        
         transition: 0.5s;
         &:hover {
             border: 1px solid $color-cian;
         }
 
-        .card-img {
-            height: 220px !important;
+        
+            
 
-            
-            
+
+        .card-img {
+            height: 220px;
+            @media (min-width: 768px) and (max-width: 991.98px){
+                margin: auto auto;
+                height: 500px !important;
+                            
+            }
+
+            @media (min-width: 576px) and (max-width: 767.98px){
+                margin: auto auto;
+                height: 250px !important;
+                            
+            }
+
         }
 
         .card-img-overlay {
-            
+            text-align: left;
             transition: 0.5s; 
             
             &:hover {
                 background-color: rgba(0, 0, 0, 0.5);
             }
+
+            h3 {
+                position: absolute;
+                top:75%;
+            }
+
+            p {
+                position: absolute;
+                top:85%;
+            }
+
+            
         }
     }
 

@@ -62,7 +62,7 @@ main .carousel-inner .carousel-item .carousel-caption {
 main .card {
   text-align: center;
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid rgb(19, 19, 19);
   transition: 0.5s;
 }
 main .card:hover {
@@ -89,23 +89,42 @@ main .card .btn-info:hover {
   }
 }
 main .card-noti-inicio {
-  vertical-align: text-bottom;
   border: 1px solid rgb(19, 19, 19);
   text-shadow: 2px 2px 2px black;
-  vertical-align: text-bottom !important;
   transition: 0.5s;
 }
 main .card-noti-inicio:hover {
   border: 1px solid rgb(3, 201, 201);
 }
 main .card-noti-inicio .card-img {
-  height: 220px !important;
+  height: 220px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  main .card-noti-inicio .card-img {
+    margin: auto auto;
+    height: 500px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  main .card-noti-inicio .card-img {
+    margin: auto auto;
+    height: 250px !important;
+  }
 }
 main .card-noti-inicio .card-img-overlay {
+  text-align: left;
   transition: 0.5s;
 }
 main .card-noti-inicio .card-img-overlay:hover {
   background-color: rgba(0, 0, 0, 0.5);
+}
+main .card-noti-inicio .card-img-overlay h3 {
+  position: absolute;
+  top: 75%;
+}
+main .card-noti-inicio .card-img-overlay p {
+  position: absolute;
+  top: 85%;
 }
 main .biografia {
   text-align: center;

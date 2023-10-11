@@ -7,7 +7,7 @@ $color-cian: rgb(3, 201, 201);
 $color-white: white;
 
 body {
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     color: $color-cian;
     background-color: $color-dark;
 
@@ -131,6 +131,37 @@ main {
         }
         
 
+    }
+
+
+    .card-noti-inicio {
+
+        
+        vertical-align: text-bottom;
+        border: 1px solid $color-gris;
+        text-shadow: 2px 2px 2px $color-dark;
+        vertical-align: text-bottom !important;
+        
+        transition: 0.5s;
+        &:hover {
+            border: 1px solid $color-cian;
+        }
+
+        .card-img {
+            height: 220px !important;
+
+            
+            
+        }
+
+        .card-img-overlay {
+            
+            transition: 0.5s; 
+            
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
     }
 
     /*Estilos de la sección biografía de la banda*/

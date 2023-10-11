@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=League+Gothic&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -18,9 +22,13 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg">
             <div class="container">
-              <a class="navbar-brand" href="index.html">
+              <a href="index.html">
                 <img src="assets/img/logo.png" alt="Logo Rocanroles Argentinos" class="logo">
-                Rocanroles Argentinos</a>
+              </a>
+              <a class="navbar-brand" href="index.html">
+                <h1 class="h3 mx-2">Rocanroles Argentinos</h1>
+              </a>
+              
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -102,8 +110,8 @@
       <!-- Artículos -->
       <h2 class="my-4 text-center">Bandas Destacadas</h2>
       <div class="container">
-        <section class="row mb-5" data-aos="zoom-in">
-            <div class="col-lg-4 col-md-4 mb-4">
+        <section class="row mb-5">
+            <div class="col-lg-4 col-md-4 mb-4" data-aos="zoom-in">
                 <div class="card card-banda">
                     <a href="html/bandas/lvp.html"><img src="assets/img/bandas/logos/banda1.jpg" class="card-img-top" alt="Primera banda destacada"></a>
                     <div class="card-body">
@@ -113,7 +121,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 mb-4">
+            <div class="col-lg-4 col-md-4 mb-4" data-aos="zoom-in">
                 <div class="card card-banda">
                     <a href="html/bandas/lpda.html"><img src="assets/img/bandas/logos/banda2.jpg" class="card-img-top" alt="Segunda banda destacada"></a>
                     <div class="card-body">
@@ -123,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 mb-4">
+            <div class="col-lg-4 col-md-4 mb-4" data-aos="zoom-in">
                 <div class="card card-banda">
                     <a href="html/bandas/ntvg.html"><img src="assets/img/bandas/logos/banda3.jpg" class="card-img-top" alt="Tercera banda destacada"></a>
                     <div class="card-body">
@@ -137,6 +145,47 @@
         </section>
       </div>
         <!-- Fin de Artículos -->
+
+        <hr class="mw-100" />
+
+        <h2 class="my-4 text-center">Noticias</h2>
+
+        <div class="container">
+
+          <section class="row mb-5">
+            <div class="col-lg-4 col-md-4 mb-4">
+              <div class="card card-noti-inicio">
+                <img class="card-img" src="assets/img/noticias/noti1.jpg" alt="Imagen de la noticia">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 mb-4">
+              <div class="card card-noti-inicio">
+                <img class="card-img" src="assets/img/noticias/noti2.jpg" alt="Card image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 mb-4">
+              <div class="card card-noti-inicio">
+                <img class="card-img" src="assets/img/noticias/noti3.jpg" alt="Card image">
+                <div class="card-img-overlay ">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text align-bottom">Last updated 3 mins ago</p>
+                </div>
+              </div>
+            </div>
+
+          </section>
+
+        </div>
         
 
     </main>

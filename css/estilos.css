@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-family: "Didact Gothic", sans-serif;
   color: rgb(3, 201, 201);
   background-color: black;
   padding-top: 95px;
@@ -87,6 +87,25 @@ main .card .btn-info:hover {
     margin: auto auto;
     width: 70%;
   }
+}
+main .card-noti-inicio {
+  vertical-align: text-bottom;
+  border: 1px solid rgb(19, 19, 19);
+  text-shadow: 2px 2px 2px black;
+  vertical-align: text-bottom !important;
+  transition: 0.5s;
+}
+main .card-noti-inicio:hover {
+  border: 1px solid rgb(3, 201, 201);
+}
+main .card-noti-inicio .card-img {
+  height: 220px !important;
+}
+main .card-noti-inicio .card-img-overlay {
+  transition: 0.5s;
+}
+main .card-noti-inicio .card-img-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 main .biografia {
   text-align: center;

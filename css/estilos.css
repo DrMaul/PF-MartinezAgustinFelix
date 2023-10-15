@@ -4,8 +4,9 @@ body {
   color: rgb(3, 201, 201);
   background-color: black;
   padding-top: 95px;
+  text-align: center;
 }
-body h2, body h3 {
+body h1, body h2, body h3 {
   font-weight: 800 !important;
   text-transform: uppercase;
 }
@@ -23,6 +24,10 @@ header .navbar a {
 header .navbar .logo {
   width: 80px;
   height: 80px;
+  transition: 0.5s;
+}
+header .navbar .logo:hover {
+  filter: brightness(50%);
 }
 header .navbar .navbar-brand, header .navbar .nav-link {
   color: white !important;
@@ -42,22 +47,25 @@ header .navbar .navbar-toggler {
   color: white;
 }
 
-main {
-  text-align: center;
+hero {
   /*Estilos del Carousel*/
-  /*Estilos de los articulos principales*/
-  /*Estilos de la sección biografía de la banda*/
-  /*Estilos de la sección discografia de la banda*/
 }
-main h2 {
-  text-align: center;
-}
-main .carousel-inner .carousel-item .img-noticia {
+hero .carousel-inner .carousel-item .img-noticia {
   height: 535px;
 }
-main .carousel-inner .carousel-item .carousel-caption {
+hero .carousel-inner .carousel-item .carousel-caption {
   background-color: rgba(12, 12, 12, 0.692);
   border-radius: 5px;
+}
+
+main {
+  /*Estilos globales para los elementos "card"*/
+  /*Estilos de la sección "Bandas Destacadas"*/
+  /*Estilos de la sección "Noticias" del inicio*/
+  /* Estilos de la sección Spotify */
+  /*Estilos de la sección biografía de la banda*/
+  /*Estilos de la sección discografia de la banda*/
+  /*Estilos de Noticias*/
 }
 main .card {
   text-align: center;
@@ -68,33 +76,36 @@ main .card {
 main .card:hover {
   border: 1px solid rgb(3, 201, 201);
 }
-main .card .card-img-top {
+main .card-banda .card-img-top {
   height: 300px !important;
   transition: 0.5s;
 }
-main .card .card-img-top:hover {
+main .card-banda .card-img-top:hover {
   filter: brightness(50%);
 }
-main .card .btn-info {
+main .card-banda .btn-info {
   background-color: rgb(3, 201, 201);
   transition: 0.5s;
 }
-main .card .btn-info:hover {
+main .card-banda .btn-info:hover {
   filter: brightness(50%);
 }
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   main .card-banda {
     margin: auto auto;
     width: 70%;
   }
 }
-main .card-noti-inicio {
-  border: 1px solid rgb(19, 19, 19);
-  text-shadow: 2px 2px 2px black;
-  transition: 0.5s;
-}
-main .card-noti-inicio:hover {
-  border: 1px solid rgb(3, 201, 201);
+@media (min-width: 768px) and (max-width: 991.98px) {
+  main .card-banda {
+    margin: auto auto;
+  }
+  main .card-banda h3 {
+    font-size: 90%;
+  }
+  main .card-banda .card-img-top {
+    height: 200px !important;
+  }
 }
 main .card-noti-inicio .card-img {
   height: 220px;
@@ -102,7 +113,7 @@ main .card-noti-inicio .card-img {
 @media (min-width: 768px) and (max-width: 991.98px) {
   main .card-noti-inicio .card-img {
     margin: auto auto;
-    height: 500px !important;
+    height: 300px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -112,6 +123,7 @@ main .card-noti-inicio .card-img {
   }
 }
 main .card-noti-inicio .card-img-overlay {
+  text-shadow: 2px 2px 1px black;
   text-align: left;
   transition: 0.5s;
 }
@@ -125,6 +137,38 @@ main .card-noti-inicio .card-img-overlay h3 {
 main .card-noti-inicio .card-img-overlay p {
   position: absolute;
   top: 85%;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  main .card-noti-inicio .card-img-overlay h3 {
+    font-size: 85%;
+  }
+  main .card-noti-inicio .card-img-overlay p {
+    font-size: 85%;
+    top: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  main .card-noti-inicio .card-img-overlay h3, main .card-noti-inicio .card-img-overlay p {
+    font-size: 85%;
+  }
+}
+main .fondo-parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/parallax-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .fondo-parallax .zona-spotify {
+  padding: 100px 0 100px 0;
+}
+main .fondo-parallax .btn-info {
+  background-color: rgb(30, 215, 96);
+  border: 0;
+  transition: 0.5s;
+}
+main .fondo-parallax .btn-info:hover {
+  filter: brightness(80%);
 }
 main .biografia {
   text-align: center;
@@ -178,6 +222,69 @@ main .discografia .card-disco .card-img-top {
   main .discografia .card-disco .card-img-top {
     height: 350px !important;
   }
+}
+main .noticias-principales .card-img {
+  height: 300px;
+}
+main .noticias-principales h3 {
+  color: rgb(3, 201, 201);
+}
+main .noticias-principales p {
+  color: white;
+}
+main .noticias-principales .articulo-noticia {
+  text-decoration: none;
+}
+main .noticias-principales .articulo-noticia:hover .card-img {
+  transition: 0.5s;
+  border: 1px solid rgb(3, 201, 201);
+  filter: brightness(60%);
+}
+main .noticias-principales .articulo-noticia:hover h3 {
+  filter: brightness(300%);
+}
+main .noticias-secundarias .card-img {
+  height: 200px;
+}
+main .noticias-secundarias h3 {
+  color: rgb(3, 201, 201);
+}
+main .noticias-secundarias p {
+  color: white;
+}
+@media (min-width: 992px) {
+  main .noticias-secundarias .card-img {
+    height: 180px;
+  }
+  main .noticias-secundarias h3 {
+    font-size: 80%;
+  }
+  main .noticias-secundarias p {
+    font-size: 80%;
+  }
+}
+main .noticias-secundarias .articulo-noticia {
+  text-decoration: none;
+}
+main .noticias-secundarias .articulo-noticia:hover .card-img {
+  transition: 0.5s;
+  border: 1px solid rgb(3, 201, 201);
+  filter: brightness(60%);
+}
+main .noticias-secundarias .articulo-noticia:hover h3 {
+  filter: brightness(300%);
+}
+main .botones-paginacion .page-item .page-link {
+  border-color: rgb(19, 19, 19);
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+main .botones-paginacion .page-item .page-link:hover {
+  background-color: rgb(19, 19, 19);
+}
+main .botones-paginacion .page-item .activo {
+  background-color: rgb(3, 201, 201);
 }
 
 /*Estilos del Footer*/

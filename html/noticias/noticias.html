@@ -24,11 +24,12 @@
               <img src="../../assets/img/logo.png" alt="Logo Rocanroles Argentinos" class="logo">
             </a>
 
+            
             <a class="navbar-brand" href="../../index.html">
               <h1 class="h5 mx-2">Rocanroles Argentinos</h1>
             </a>
-            
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
               </svg>
@@ -39,7 +40,7 @@
                   <a class="nav-link" href="../../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Bandas</a>
+                  <a class="nav-link" href="../bandas/lvp.html">Bandas</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Noticias</a>
@@ -63,81 +64,196 @@
       
     <!-- Cuerpo del Sitio -->
     <main>
-      <!-- Biografía -->
-      <h2 class="my-5 d-lg-none">no te va gustar</h2>
-      <div class="container my-5 biografia">
-        <section class="row mb-4">
-              <div class="col-lg-4">
-                <img src="../../assets/img/bandas/logos/banda3.jpg" class="img-fluid img-perfil-banda mb-3" alt="Imagen de la banda">
-              </div>
-              <div class="col-lg-8 ">
-                <div class="card-body">
-                  <h2 id="biografia" class="mb-3 d-none d-lg-block">no te va gustar</h2>
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                    <button type="button" class="btn btn-info"><a href="#biografia">Biografía</a></button>
-                    <button type="button" class="btn btn-info"><a href="#discos">Discos</a></button>
-                    <button type="button" class="btn btn-info">Noticias</button>
+      <!-- Noticias Principales -->
+      <h2 class="my-5">Noticias</h2>
+      <div class="container my-5 noticias-principales">
+        <section data-aos="fade-right" >
+              <a class="row my-4 articulo-noticia" href="#">
+                <div class="col-lg-6">
+                  <img class="card-img img-fluid mb-3" src="../../assets/img/noticias/noti6.jpg" alt="Imagen de la noticia">
+                </div>
+                <div class="col-lg-6 ">
+                  <div class="card-body">
+                    <h3  class="h5 card-title">Pink Floyd lanza su documental "Eclipse"</h3>
+                    <p class="my-3 card-text">10-10-23</p>
+                    <p class="my-3 card-text">La banda de rock británica continua celebrando el 50 aniversario de "The dark side of the moon" con el lanzamiento del documental “Eclipse” que verá la luz el próximo 13 de octubre.</p>
                   </div>
-                  <h3  class="h5 my-3 card-title">Biografía</h3>
-                  <p class="my-3 card-text">No Te Va Gustar se formó en 1994 en Uruguay, cuando los integrantes de la banda tenían 16 años. Después de algunos movimientos iniciales en la formación, el grupo se estabilizó como un trío de rock and roll de bajo (Mateo Moreno), guitarra (Emiliano Brancciari) y batería (Pablo Abdala).
-
-                    Entre 1996 y 1997, con la inclusión de percusión y vientos, la música de No Te Va Gustar comenzó a evolucionar fusionando varios ritmos americanos (reggae, candombe, ska, salsa) sin dejar de lado su esencia roquera, influenciada por el rock argentino, como ellos mismos declaran.</p>
-                  <button type="button" class="btn btn-secondary">Ver más</button>
                 </div>
+              </a>
+              <hr class="mw-100" /> 
+        </section>
+        <section data-aos="fade-left">
+          <a class="row my-4 articulo-noticia" href="#">
+            <div class="col-lg-6 ">
+              <div class="card-body d-none d-lg-block">
+                <h3  class="h5 card-title ">50 aniversario de "Artaud"</h3>
+                <p class="my-3 card-text">09-10-23</p>
+                <p class="my-3 card-text">Uno de los álbumes más icónicos de Luis Alberto Spinetta cumple 50 años, este ha sido votado en reiteradas oportunidades como el Mejor Álbum de Rock Argentino de todos los tiempos.</p>
               </div>
+            </div>
+            <div class="col-lg-6">
+              <img class="card-img img-fluid mb-3" src="../../assets/img/noticias/noti5.jpg" alt="Imagen de la noticia">
+            </div>
+            <div class="card-body d-lg-none">
+              <h3  class="h5 card-title ">50 aniversario de "Artaud"</h3>
+              <p class="my-3 card-text">09-10-23</p>
+              <p class="my-3 card-text">Uno de los álbumes más icónicos de Luis Alberto Spinetta cumple 50 años, este ha sido votado en reiteradas oportunidades como el Mejor Álbum de Rock Argentino de todos los tiempos.</p>
+            </div>
+          </a>
+          <hr class="mw-100" /> 
         </section>
-        
-      </div>
-   
-      <hr id="discos" class="mw-100" /> 
-      <!-- Discografía -->
-      <h2  class="my-5">Discos</h2>
-      <div  class="container my-5 discografia">
-
-        <section class="row mb-4">
-
-          <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-up">
-            <div class="card card-disco">
-                <a href="#"><img src="../../assets/img/bandas/discos/ntvg/disco1.png" class="card-img-top" alt="Disco de la banda"></a>
-                <div class="card-body">
-                <h3 class="card-title h5">Luz (2021)</h3>
-                </div>
+        <section data-aos="fade-right">
+          <a class="row my-4 articulo-noticia" href="#">
+            <div class="col-lg-6">
+              <img class="card-img img-fluid mb-3" src="../../assets/img/noticias/noti4.jpg" alt="Imagen de la noticia">
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-up">
-            <div class="card card-disco">
-                <a href="#"><img src="../../assets/img/bandas/discos/ntvg/disco2.png" class="card-img-top" alt="Disco de la banda"></a>
-                <div class="card-body">
-                <h3 class="card-title h5">otras canc... (2020)</h3>
-                </div>
+            <div class="col-lg-6 ">
+              <div class="card-body">
+                <h3  class="h5 card-title">No Te Va Gustar y Mollo reversionan "Crimen"</h3>
+                <p class="my-3 card-text">06-10-23</p>
+                <p class="my-3 card-text">El 17 de diciembre de 2021 la banda de rock uruguaya se presentaba en el Estadio Único de La Plata para brindar un show inolvidable, uno de los momentos más especiales de la noche fue cuando subió al escenario Ricardo para interpretar una versión de este clásico de Cerati.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-up">
-            <div class="card card-disco">
-                <a href="#"><img src="../../assets/img/bandas/discos/ntvg/disco3.png" class="card-img-top" alt="Disco de la banda"></a>
-                <div class="card-body">
-                <h3 class="card-title h5">suenan las... (2017)</h3>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-up">
-            <div class="card card-disco">
-                <a href="#"><img src="../../assets/img/bandas/discos/ntvg/disco4.png" class="card-img-top" alt="Disco de la banda"></a>
-                <div class="card-body">
-                <h3 class="card-title h5">el tiempo otr... (2014)</h3>
-                </div>
-            </div>
-          </div>
-         
+          </a>
           
-        
-
         </section>
+      </div>
+      <!-- Fin de Noticias Principales -->
+   
+      <hr class="mw-100" /> 
+
+
+      <!-- Noticias Secundarias-->
+      <div  class="container my-5 noticias-secundarias">
+        <section class="row my-4" >
+          <div class="col-lg-6 my-3" data-aos="zoom-in-right">
+            <a class="row articulo-noticia" href="#">
+            <div class="col">
+              <img class="card-img img-fluid" src="../../assets/img/noticias/noti1.jpg" alt="Imagen de la noticia">
+            </div>
+            <div class="col">
+              <div class="card-body">
+                <h3  class="h5 card-title">Shows de Fabiana Cantilo en el Gran Rex</h3>
+                <p class="card-text">03-10-23</p>
+                <p class="card-text">El 17 de diciembre de 2021 la banda de rock uruguaya se presentaba en el Estadio Único de La Plata...</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <hr class="mw-100 d-lg-none" />
+          
+          <div class="col-lg-6 my-3" data-aos="zoom-in-left">
+            <a class="row articulo-noticia" href="#"> 
+              <div class="col">
+              <img class="card-img img-fluid" src="../../assets/img/noticias/noti2.jpg" alt="Imagen de la noticia">
+              </div>
+              <div class="col ">
+                <div class="card-body">
+                  <h3  class="h5 card-title">Caballeros De La Quema: Una noche inolvidable</h3>
+                  <p class="card-text">03-10-23</p>
+                  <p class="card-text">El 17 de diciembre de 2021 la banda de rock uruguaya se presentaba en el Estadio Único de La Plata...</p>
+                </div>
+              </div>            
+            </a>
+          </div>
+          
+          
+        </section>
+        <hr class="mw-100" />
+        <section class="row my-4" >
+          <div class="col-lg-6 my-3" data-aos="zoom-in-right">
+            <a class="row articulo-noticia" href="#">
+            <div class="col">
+              <img class="card-img img-fluid" src="../../assets/img/noticias/noti3.jpg" alt="Imagen de la noticia">
+            </div>
+            <div class="col mb-3">
+              <div class="card-body">
+                <h3  class="h5 card-title">Ricardo Iorio lanza un homenaje muy especial</h3>
+                <p class="card-text">03-10-23</p>
+                <p class="card-text">El 17 de diciembre de 2021 la banda de rock uruguaya se presentaba en el Estadio Único de La Plata...</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <hr class="mw-100 d-lg-none" />
+          
+          <div class="col-lg-6 my-3" data-aos="zoom-in-left">
+            <a class="row articulo-noticia" href="#"> 
+              <div class="col">
+              <img class="card-img img-fluid" src="../../assets/img/noticias/noti7.jpg" alt="Imagen de la noticia">
+              </div>
+              <div class="col mb-3">
+                <div class="card-body">
+                  <h3  class="h5 card-title">A 10 años de "Romantisísmico" de Babasónicos</h3>
+                  <p class="card-text">03-10-23</p>
+                  <p class="card-text">El 17 de diciembre de 2021 la banda de rock uruguaya se presentaba en el Estadio Único de La Plata...</p>
+                </div>
+              </div>            
+            </a>
+          </div>
+          
+          
+        </section>
+        <hr class="mw-100" />
+        <section class="row my-4" >
+          <div class="col-lg-6 my-3" data-aos="zoom-in-right">
+            <a class="row articulo-noticia" href="#">
+            <div class="col">
+              <img class="card-img img-fluid" src="../../assets/img/noticias/noti8.jpg" alt="Imagen de la noticia">
+            </div>
+            <div class="col">
+              <div class="card-body">
+                <h3  class="h5 card-title">Enanitos Verdes llega a Luna Park</h3>
+                <p class="card-text">02-10-23</p>
+                <p class="card-text">El 17 de diciembre de 2021 la banda de rock uruguaya se presentaba en el Estadio Único de La Plata...</p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <hr class="mw-100 d-lg-none" />
+          
+          <div class="col-lg-6 my-3" data-aos="zoom-in-left">
+            <a class="row articulo-noticia" href="#"> 
+              <div class="col">
+              <img class="card-img img-fluid" src="../../assets/img/noticias/noti9.jpg" alt="Imagen de la noticia">
+              </div>
+              <div class="col mb-3">
+                <div class="card-body">
+                  <h3  class="h5 card-title">Nonpalidece lanza nuevo single "Mr Muzik"</h3>
+                  <p class="card-text">02-10-23</p>
+                  <p class="card-text">El 17 de diciembre de 2021 la banda de rock uruguaya se presentaba en el Estadio Único de La Plata...</p>
+                </div>
+              </div>            
+            </a>
+          </div>
+          
+          
+        </section>
+      </div>
+      <!-- Fin de Noticias Secundarias-->
+
+      <!-- Botones Paginación-->
+      <div class="container my-5 botones-paginacion">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item activo"><a class="page-link activo" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      
 
       </div>
+      <!-- Fin de Botones Paginación-->
 
     </main>
     <!-- Fin del Cuerpo del Sitio -->

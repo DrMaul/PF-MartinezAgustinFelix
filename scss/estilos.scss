@@ -13,7 +13,9 @@ body {
 
     padding-top: 95px;
 
-    h2, h3 {
+    text-align: center;
+
+    h1, h2, h3 {
         
         font-weight:$negrita !important;
         text-transform: uppercase;
@@ -42,6 +44,11 @@ header {
         .logo {
                 width: 80px;
                 height: 80px;
+                transition: 0.5s;
+                &:hover {
+                    filter:brightness(50%) ;
+                }
+
             }
 
         .navbar-brand, .nav-link {
@@ -71,14 +78,7 @@ header {
 
 }
 
-
-
-main {
-    
-    text-align: center;
-    h2 {
-        text-align: center;
-    }
+hero {
 
     /*Estilos del Carousel*/
     .carousel-inner {
@@ -95,7 +95,17 @@ main {
         }
     }
 
-    /*Estilos de los articulos principales*/
+}
+
+
+main {
+    
+    
+    
+
+    
+
+    /*Estilos globales para los elementos "card"*/
     .card {
         text-align: center;
         background-color: $color-dark;
@@ -104,6 +114,13 @@ main {
         &:hover {
             border: 1px solid $color-cian;
         }
+        
+    }
+
+    /*Estilos de la sección "Bandas Destacadas"*/
+
+    .card-banda {
+
         .card-img-top {
             height: 300px !important;
             transition: 0.5s;
@@ -119,39 +136,36 @@ main {
                 filter:brightness(50%) ;
             }
         }
-
-    }
-
-    .card-banda {
         
-        @media (max-width: 768px){
+        @media (min-width: 576px) and (max-width: 767.98px){
             margin: auto auto;
             width: 70%;
             
         }
-        
+
+        @media (min-width: 768px) and (max-width: 991.98px){
+            margin: auto auto;
+            h3 {
+                font-size: 90%;
+            }
+
+            .card-img-top{
+                height: 200px !important;
+            }
+        }
 
     }
 
-
+    /*Estilos de la sección "Noticias" del inicio*/
     .card-noti-inicio {
-
-        border: 1px solid $color-gris;
-        text-shadow: 2px 2px 2px $color-dark;
-        transition: 0.5s;
-        &:hover {
-            border: 1px solid $color-cian;
-        }
-
-        
-            
-
 
         .card-img {
             height: 220px;
+
+
             @media (min-width: 768px) and (max-width: 991.98px){
                 margin: auto auto;
-                height: 500px !important;
+                height: 300px !important;
                             
             }
 
@@ -164,6 +178,7 @@ main {
         }
 
         .card-img-overlay {
+            text-shadow: 2px 2px 1px $color-dark;
             text-align: left;
             transition: 0.5s; 
             
@@ -181,9 +196,57 @@ main {
                 top:85%;
             }
 
-            
+            @media (min-width: 992px) and (max-width: 1199.98px) {
+                h3 {
+                    font-size: 85%;
+                }
+
+                p {
+                    font-size: 85%;
+                    top:90%
+                }
+
+
+            }
+
+            @media (min-width: 1200px) {
+
+                h3,p {
+                    font-size: 85%;
+                }
+
+            }
+
+        }
+
+    }
+
+    /* Estilos de la sección Spotify */
+    .fondo-parallax {
+        
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/parallax-background.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .zona-spotify {
+            padding: 100px 0 100px 0;
+        }
+
+        .btn-info {
+            background-color: rgb(30, 215, 96);
+            border: 0;
+            transition: 0.5s;
+            &:hover {
+                filter:brightness(80%) ;
+            }
+
         }
     }
+
+
+
 
     /*Estilos de la sección biografía de la banda*/
 
@@ -263,6 +326,135 @@ main {
 
 
 
+    }
+
+
+    /*Estilos de Noticias*/
+
+    .noticias-principales {
+
+        .card-img {
+                
+            height: 300px;
+
+        }
+        h3 {
+            color: $color-cian;
+        }
+        p {
+            color:$color-white;
+        }
+        
+        .articulo-noticia {
+            text-decoration: none;
+            
+
+            &:hover {
+                
+                .card-img {
+                    transition: 0.5s;
+                    border: 1px solid $color-cian;
+                    filter:brightness(60%);
+                }
+
+                h3 {
+                    filter:brightness(300%);
+                }
+
+            }
+
+        }
+        
+
+        
+        
+    }
+
+    .noticias-secundarias {
+
+        .card-img {
+                
+            height: 200px;
+        }
+        h3 {
+            color: $color-cian;
+        }
+        p {
+            color:$color-white;
+        }
+
+        @media (min-width: 992px) {
+
+            .card-img {
+                
+                height: 180px;
+    
+            }
+            h3 {
+                font-size: 80%;
+                
+            }
+            p {
+                font-size: 80%;
+                
+            }
+            
+        }
+
+        
+        .articulo-noticia {
+            text-decoration: none;
+            
+
+            &:hover {
+                
+                .card-img {
+                    transition: 0.5s;
+                    border: 1px solid $color-cian;
+                    filter:brightness(60%);
+                }
+
+                h3 {
+                    filter:brightness(300%);
+                }
+
+            }
+
+        }
+        
+
+        
+
+    }
+
+    .botones-paginacion {
+
+        .page-item {
+
+            
+            
+            .page-link {
+            border-color: $color-gris;
+            color: $color-white;
+            background-color: $color-dark;
+            transition: 0.5s;
+
+                &:hover {
+                    background-color: $color-gris;
+                }
+
+
+            }
+
+            .activo {
+            background-color: $color-cian;
+            
+
+            }
+        }
+        
+
+        
     }
     
 

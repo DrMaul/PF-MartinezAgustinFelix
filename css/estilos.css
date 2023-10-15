@@ -66,6 +66,7 @@ main {
   /*Estilos de la sección biografía de la banda*/
   /*Estilos de la sección discografia de la banda*/
   /*Estilos de Noticias*/
+  /*Estilos de la sección Contacto*/
 }
 main .card {
   text-align: center;
@@ -319,6 +320,40 @@ main .galeria-imagenes .botones-paginacion .page-item .page-link:hover {
 }
 main .galeria-imagenes .botones-paginacion .page-item .activo {
   background-color: rgb(3, 201, 201);
+}
+main .contacto {
+  text-align: center;
+}
+main .contacto p {
+  color: white;
+}
+main .contacto .img-logo-contacto {
+  width: auto;
+  height: 350px;
+}
+@media (max-width: 991.98px) {
+  main .contacto .img-logo-contacto {
+    width: 350px;
+    height: 350px;
+  }
+}
+main .contacto .btn-secondary {
+  background-color: rgb(19, 19, 19);
+}
+main .contacto .btn-secondary:hover {
+  background-color: rgb(3, 201, 201);
+}
+main .contacto .form-contacto {
+  text-align: start;
+}
+main .contacto .form-contacto .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgb(3, 201, 201);
+}
+main .contacto .form-contacto label {
+  margin: 8px 0 8px 0;
+}
+main .contacto .form-contacto textarea {
+  resize: none;
 }
 
 /*Estilos del Footer*/

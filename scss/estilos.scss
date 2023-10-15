@@ -421,41 +421,110 @@ main {
             }
 
         }
-        
 
-        
+        .botones-paginacion {
 
+            .page-item {
+    
+                
+                
+                .page-link {
+                border-color: $color-gris;
+                color: $color-white;
+                background-color: $color-dark;
+                transition: 0.5s;
+    
+                    &:hover {
+                        background-color: $color-gris;
+                    }
+    
+    
+                }
+    
+                .activo {
+                background-color: $color-cian;
+                
+    
+                }
+            }
+            
+        }
+        
     }
 
-    .botones-paginacion {
+    .galeria-imagenes {
 
-        .page-item {
-
+        .card-img {
             
+            margin: 16px;
             
-            .page-link {
-            border-color: $color-gris;
-            color: $color-white;
-            background-color: $color-dark;
-            transition: 0.5s;
 
-                &:hover {
-                    background-color: $color-gris;
-                }
-
-
+            &:hover {
+                transition: 0.5s;
+                border: 1px solid $color-cian;
+                filter:brightness(60%);
             }
 
-            .activo {
-            background-color: $color-cian;
+            @media (max-width: 992px) {
+            height: auto;
+            }
             
+        }
 
+        .galeria-primera-fila {
+
+            .card-img{
+                height: 250px;
             }
         }
         
+        .galeria-segunda-fila {
+            .card-img{
+                height: 500px;
+            }
+        }
 
-        
+        .galeria-tercera-fila {
+            .card-img{
+                height: 300px;
+            }
+        }
+
+
+        .botones-paginacion {
+
+            .page-item {
+    
+                
+                
+                .page-link {
+                border-color: $color-gris;
+                color: $color-white;
+                background-color: $color-dark;
+                transition: 0.5s;
+    
+                    &:hover {
+                        background-color: $color-gris;
+                    }
+    
+    
+                }
+    
+                .activo {
+                background-color: $color-cian;
+                
+    
+                }
+            }
+            
+        }
+
+
     }
+
+    
+
+
     
 
 }

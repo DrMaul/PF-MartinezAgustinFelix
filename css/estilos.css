@@ -274,16 +274,50 @@ main .noticias-secundarias .articulo-noticia:hover .card-img {
 main .noticias-secundarias .articulo-noticia:hover h3 {
   filter: brightness(300%);
 }
-main .botones-paginacion .page-item .page-link {
+main .noticias-secundarias .botones-paginacion .page-item .page-link {
   border-color: rgb(19, 19, 19);
   color: white;
   background-color: black;
   transition: 0.5s;
 }
-main .botones-paginacion .page-item .page-link:hover {
+main .noticias-secundarias .botones-paginacion .page-item .page-link:hover {
   background-color: rgb(19, 19, 19);
 }
-main .botones-paginacion .page-item .activo {
+main .noticias-secundarias .botones-paginacion .page-item .activo {
+  background-color: rgb(3, 201, 201);
+}
+main .galeria-imagenes .card-img {
+  margin: 16px;
+}
+main .galeria-imagenes .card-img:hover {
+  transition: 0.5s;
+  border: 1px solid rgb(3, 201, 201);
+  filter: brightness(60%);
+}
+@media (max-width: 992px) {
+  main .galeria-imagenes .card-img {
+    height: auto;
+  }
+}
+main .galeria-imagenes .galeria-primera-fila .card-img {
+  height: 250px;
+}
+main .galeria-imagenes .galeria-segunda-fila .card-img {
+  height: 500px;
+}
+main .galeria-imagenes .galeria-tercera-fila .card-img {
+  height: 300px;
+}
+main .galeria-imagenes .botones-paginacion .page-item .page-link {
+  border-color: rgb(19, 19, 19);
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+main .galeria-imagenes .botones-paginacion .page-item .page-link:hover {
+  background-color: rgb(19, 19, 19);
+}
+main .galeria-imagenes .botones-paginacion .page-item .activo {
   background-color: rgb(3, 201, 201);
 }
 

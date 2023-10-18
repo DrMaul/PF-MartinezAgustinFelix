@@ -12,9 +12,12 @@ body h1, body h2, body h3 {
 }
 body p {
   font-weight: 100;
+  color: white;
 }
 
-/*Estilos del Nav*/
+header {
+  /*Estilos del Nav*/
+}
 header .navbar {
   background-color: rgb(12, 12, 12) !important;
 }
@@ -35,6 +38,12 @@ header .navbar .navbar-brand, header .navbar .nav-link {
 }
 header .navbar .navbar-brand:hover, header .navbar .nav-link:hover {
   color: rgb(3, 201, 201) !important;
+}
+header .navbar .nav-item .activo {
+  color: rgb(3, 201, 201) !important;
+}
+header .navbar .nav-item .activo:hover {
+  color: white !important;
 }
 header .navbar .btn-secondary {
   background-color: rgb(19, 19, 19);
@@ -60,13 +69,15 @@ hero .carousel-inner .carousel-item .carousel-caption {
 
 main {
   /*Estilos globales para los elementos "card"*/
+  /*Estilos globales para los botones"*/
   /*Estilos de la sección "Bandas Destacadas"*/
   /*Estilos de la sección "Noticias" del inicio*/
   /* Estilos de la sección Spotify */
   /*Estilos de la sección biografía de la banda*/
   /*Estilos de la sección discografia de la banda*/
   /*Estilos de Noticias*/
-  /*Estilos de la sección Contacto*/
+  /*Estilos de Galeria*/
+  /*Estilos de Contacto*/
 }
 main .card {
   text-align: center;
@@ -77,18 +88,40 @@ main .card {
 main .card:hover {
   border: 1px solid rgb(3, 201, 201);
 }
+main .btn-info {
+  background-color: rgb(3, 201, 201);
+  transition: 0.5s;
+}
+main .btn-info:hover {
+  filter: brightness(50%);
+}
+main .btn-info a {
+  color: black;
+  text-decoration: none;
+}
+main .btn-secondary {
+  background-color: rgb(19, 19, 19);
+}
+main .btn-secondary:hover {
+  background-color: rgb(3, 201, 201);
+}
+main .botones-paginacion .page-item .page-link {
+  border-color: rgb(19, 19, 19);
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+main .botones-paginacion .page-item .page-link:hover {
+  background-color: rgb(19, 19, 19);
+}
+main .botones-paginacion .page-item .activo {
+  background-color: rgb(3, 201, 201);
+}
 main .card-banda .card-img-top {
   height: 300px !important;
   transition: 0.5s;
 }
 main .card-banda .card-img-top:hover {
-  filter: brightness(50%);
-}
-main .card-banda .btn-info {
-  background-color: rgb(3, 201, 201);
-  transition: 0.5s;
-}
-main .card-banda .btn-info:hover {
   filter: brightness(50%);
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -163,12 +196,12 @@ main .fondo-parallax {
 main .fondo-parallax .zona-spotify {
   padding: 100px 0 100px 0;
 }
-main .fondo-parallax .btn-info {
+main .fondo-parallax .btn-spotify {
   background-color: rgb(30, 215, 96);
   border: 0;
   transition: 0.5s;
 }
-main .fondo-parallax .btn-info:hover {
+main .fondo-parallax .btn-spotify:hover {
   filter: brightness(80%);
 }
 main .biografia {
@@ -184,29 +217,6 @@ main .biografia .img-perfil-banda {
     width: 350px;
     height: 350px;
   }
-}
-main .biografia .btn-info {
-  background-color: rgb(3, 201, 201);
-  transition: 0.5s;
-}
-main .biografia .btn-info:hover {
-  filter: brightness(50%);
-}
-main .biografia .btn-info a {
-  color: black;
-  text-decoration: none;
-}
-main .biografia .btn-secondary {
-  background-color: rgb(19, 19, 19);
-}
-main .biografia .btn-secondary:hover {
-  background-color: rgb(3, 201, 201);
-}
-main .biografia p {
-  color: white;
-}
-main .discografia {
-  text-align: center;
 }
 main .discografia .card-disco a {
   color: rgb(3, 201, 201);
@@ -275,18 +285,6 @@ main .noticias-secundarias .articulo-noticia:hover .card-img {
 main .noticias-secundarias .articulo-noticia:hover h3 {
   filter: brightness(300%);
 }
-main .noticias-secundarias .botones-paginacion .page-item .page-link {
-  border-color: rgb(19, 19, 19);
-  color: white;
-  background-color: black;
-  transition: 0.5s;
-}
-main .noticias-secundarias .botones-paginacion .page-item .page-link:hover {
-  background-color: rgb(19, 19, 19);
-}
-main .noticias-secundarias .botones-paginacion .page-item .activo {
-  background-color: rgb(3, 201, 201);
-}
 main .galeria-imagenes .card-img {
   margin: 16px;
 }
@@ -309,24 +307,6 @@ main .galeria-imagenes .galeria-segunda-fila .card-img {
 main .galeria-imagenes .galeria-tercera-fila .card-img {
   height: 300px;
 }
-main .galeria-imagenes .botones-paginacion .page-item .page-link {
-  border-color: rgb(19, 19, 19);
-  color: white;
-  background-color: black;
-  transition: 0.5s;
-}
-main .galeria-imagenes .botones-paginacion .page-item .page-link:hover {
-  background-color: rgb(19, 19, 19);
-}
-main .galeria-imagenes .botones-paginacion .page-item .activo {
-  background-color: rgb(3, 201, 201);
-}
-main .contacto {
-  text-align: center;
-}
-main .contacto p {
-  color: white;
-}
 main .contacto .img-logo-contacto {
   width: auto;
   height: 350px;
@@ -336,12 +316,6 @@ main .contacto .img-logo-contacto {
     width: 350px;
     height: 350px;
   }
-}
-main .contacto .btn-secondary {
-  background-color: rgb(19, 19, 19);
-}
-main .contacto .btn-secondary:hover {
-  background-color: rgb(3, 201, 201);
 }
 main .contacto .form-contacto {
   text-align: start;

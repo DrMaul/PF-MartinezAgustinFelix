@@ -24,14 +24,16 @@ body {
 
     p {
         font-weight: $light;
+        color: $color-white;
     }
 
 
 }
 
-/*Estilos del Nav*/
+
 header {
-    
+
+    /*Estilos del Nav*/
     .navbar {
         
         background-color: $color-gris-dark !important;
@@ -56,6 +58,18 @@ header {
             transition: 0.5s;
             &:hover {
                 color: $color-cian !important;
+            }
+
+            
+        }
+
+        .nav-item {
+            .activo {
+                
+                color: $color-cian !important;
+                &:hover {
+                    color: $color-white !important;
+                }
             }
         }
 
@@ -100,11 +114,6 @@ hero {
 
 main {
     
-    
-    
-
-    
-
     /*Estilos globales para los elementos "card"*/
     .card {
         text-align: center;
@@ -117,8 +126,59 @@ main {
         
     }
 
-    /*Estilos de la sección "Bandas Destacadas"*/
+    /*Estilos globales para los botones"*/
+    .btn-info {
+        background-color: $color-cian;
+        transition: 0.5s;
+        
+        &:hover {
+            filter:brightness(50%) ;
 
+        }
+
+        a{
+            color:$color-dark;
+            text-decoration: none;
+        }
+    }
+
+    .btn-secondary {
+        background-color: $color-gris;
+
+        &:hover {
+            background-color: $color-cian;
+        }
+
+        
+    }
+
+    .botones-paginacion {
+
+        .page-item {
+            .page-link {
+            border-color: $color-gris;
+            color: $color-white;
+            background-color: $color-dark;
+            transition: 0.5s;
+
+                &:hover {
+                    background-color: $color-gris;
+                }
+
+
+            }
+
+            .activo {
+            background-color: $color-cian;
+            }
+        }
+        
+    }
+
+
+
+
+    /*Estilos de la sección "Bandas Destacadas"*/
     .card-banda {
 
         .card-img-top {
@@ -129,13 +189,7 @@ main {
             }
         }
 
-        .btn-info {
-            background-color: $color-cian;
-            transition: 0.5s;
-            &:hover {
-                filter:brightness(50%) ;
-            }
-        }
+        
         
         @media (min-width: 576px) and (max-width: 767.98px){
             margin: auto auto;
@@ -234,7 +288,7 @@ main {
             padding: 100px 0 100px 0;
         }
 
-        .btn-info {
+        .btn-spotify {
             background-color: rgb(30, 215, 96);
             border: 0;
             transition: 0.5s;
@@ -245,11 +299,7 @@ main {
         }
     }
 
-
-
-
     /*Estilos de la sección biografía de la banda*/
-
     .biografia {
 
         text-align: center;
@@ -266,41 +316,15 @@ main {
                 }
         }
 
-        .btn-info {
-            background-color: $color-cian;
-            transition: 0.5s;
-            
-            &:hover {
-                filter:brightness(50%) ;
+        
 
-            }
-
-            a{
-                color:$color-dark;
-                text-decoration: none;
-            }
-        }
-
-        .btn-secondary {
-            background-color: $color-gris;
-
-            &:hover {
-                background-color: $color-cian;
-            }
-
-            
-        }
-
-        p {
-            color:$color-white;
-        }
+        
         
     }
 
     /*Estilos de la sección discografia de la banda*/
-
     .discografia {
-        text-align: center;
+        
 
         .card-disco {
             a {color:$color-cian;
@@ -330,7 +354,6 @@ main {
 
 
     /*Estilos de Noticias*/
-
     .noticias-principales {
 
         .card-img {
@@ -422,36 +445,11 @@ main {
 
         }
 
-        .botones-paginacion {
-
-            .page-item {
-    
-                
-                
-                .page-link {
-                border-color: $color-gris;
-                color: $color-white;
-                background-color: $color-dark;
-                transition: 0.5s;
-    
-                    &:hover {
-                        background-color: $color-gris;
-                    }
-    
-    
-                }
-    
-                .activo {
-                background-color: $color-cian;
-                
-    
-                }
-            }
-            
-        }
+        
         
     }
 
+    /*Estilos de Galeria*/
     .galeria-imagenes {
 
         .card-img {
@@ -490,50 +488,14 @@ main {
             }
         }
 
-
-        .botones-paginacion {
-
-            .page-item {
-    
-                
-                
-                .page-link {
-                border-color: $color-gris;
-                color: $color-white;
-                background-color: $color-dark;
-                transition: 0.5s;
-    
-                    &:hover {
-                        background-color: $color-gris;
-                    }
-    
-    
-                }
-    
-                .activo {
-                background-color: $color-cian;
-                
-    
-                }
-            }
-            
-        }
-
-
     }
 
     
-    /*Estilos de la sección Contacto*/
+    /*Estilos de Contacto*/
 
     .contacto {
 
-        text-align: center;
-
-        p {
-            
-            color:$color-white;
-        }
-
+      
         .img-logo-contacto {
         width: auto;
         height: 350px;
@@ -546,13 +508,6 @@ main {
                 }
         }
 
-        .btn-secondary {
-            background-color: $color-gris;
-
-            &:hover {
-                background-color: $color-cian;
-            }
-        }
 
         .form-contacto {
             text-align: start;
@@ -577,8 +532,6 @@ main {
         
         
     }
-
-    
 
 }
 

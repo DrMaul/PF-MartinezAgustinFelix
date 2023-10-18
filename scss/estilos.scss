@@ -6,6 +6,10 @@ $color-gris: rgb(19,19,19);
 $color-cian: rgb(3, 201, 201);
 $color-white: white;
 
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Didact Gothic', sans-serif;
     color: $color-cian;
@@ -35,6 +39,7 @@ header {
 
     /*Estilos del Nav*/
     .navbar {
+        
         
         background-color: $color-gris-dark !important;
     
@@ -86,6 +91,16 @@ header {
             background-color: $color-gris;
             color: $color-white;
         
+        }
+
+
+        @media (max-width: 575.98px) {
+
+            h1 {
+                font-size: 75%;
+            }
+
+
         }
 
     }
@@ -229,7 +244,10 @@ main {
                             
             }
 
+            
+
         }
+
 
         .card-img-overlay {
             text-shadow: 2px 2px 1px $color-dark;
@@ -248,6 +266,17 @@ main {
             p {
                 position: absolute;
                 top:85%;
+            }
+
+            @media (max-width: 575.98px) {
+                h3 {
+                    font-size: 90%;
+                }
+
+                p {
+                    font-size: 90%;
+                    top:90%
+                }
             }
 
             @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -452,9 +481,9 @@ main {
     /*Estilos de Galeria*/
     .galeria-imagenes {
 
+        
         .card-img {
-            
-            margin: 16px;
+            margin-bottom: 16px;
             
 
             &:hover {
@@ -487,6 +516,7 @@ main {
                 height: 300px;
             }
         }
+
 
     }
 

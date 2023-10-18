@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Didact Gothic", sans-serif;
   color: rgb(3, 201, 201);
@@ -54,6 +58,11 @@ header .navbar .btn-secondary:hover {
 header .navbar .navbar-toggler {
   background-color: rgb(19, 19, 19);
   color: white;
+}
+@media (max-width: 575.98px) {
+  header .navbar h1 {
+    font-size: 75%;
+  }
 }
 
 hero {
@@ -172,6 +181,15 @@ main .card-noti-inicio .card-img-overlay p {
   position: absolute;
   top: 85%;
 }
+@media (max-width: 575.98px) {
+  main .card-noti-inicio .card-img-overlay h3 {
+    font-size: 90%;
+  }
+  main .card-noti-inicio .card-img-overlay p {
+    font-size: 90%;
+    top: 90%;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199.98px) {
   main .card-noti-inicio .card-img-overlay h3 {
     font-size: 85%;
@@ -286,7 +304,7 @@ main .noticias-secundarias .articulo-noticia:hover h3 {
   filter: brightness(300%);
 }
 main .galeria-imagenes .card-img {
-  margin: 16px;
+  margin-bottom: 16px;
 }
 main .galeria-imagenes .card-img:hover {
   transition: 0.5s;
